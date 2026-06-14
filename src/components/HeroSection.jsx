@@ -1,4 +1,6 @@
 
+import { ArrowDown } from "lucide-react"
+
 
 export const HeroSection = () => {
     return <section id="hero"
@@ -8,7 +10,7 @@ export const HeroSection = () => {
         <div className="container max-w-4xl max-auto text-center z-10">
           <div className="space-y-6">
              <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-                <span className=" animate-fade-in">Hey, </span>
+                <span className="  animate-fade-in">Hey, </span>
                 <span className="text-primary  animate-fade-in-delay-1">
                 {" "}
                 I'm 
@@ -18,8 +20,24 @@ export const HeroSection = () => {
                 Moiz
                 </span>
              </h1>
-          </div>
-         
+             <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto  animate-fade-in-delay-3">
+                I create stellar web experiences with modern technologies.
+                Specializing in Full Stack development, I build interfaces that are 
+                both beautiful and functional.
+                interface
+             </p>
+                 
+              <div animate-fade-in-delay-4>
+                <a href="#projects" className="cosmic-button">
+                    View My Work
+                </a>
+              </div>   
+          </div>   
+        </div>
+
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
+      <span className="text-sm text-muted-foreground mb-2"> Scroll </span>
+      <ArrowDown className="h-5 w-5 text-primary" />
         </div>   
      </section>
 }
